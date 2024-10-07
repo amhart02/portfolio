@@ -38,6 +38,7 @@ header {
     background-color: none;
     border: none;
     border-radius: 10%;
+    font-weight: 300;
 }
 .name {
     font-family: "memimas-pro", sans-serif;
@@ -121,12 +122,14 @@ header {
 .about_me_page a {
     text-align: center;
     font-size: 2em;
-    margin: 10% auto;
+    height: fit-content;
+    width: fit-content;
     text-decoration: none;
     color: black;
     background-color: rgb(234, 232, 232);
-    width: 50%;
     font-weight: 200;
+    margin: 10% auto;
+    padding: 3%;
 }
 .about_me_page a:hover{
     color: #FF6B6C;
@@ -140,6 +143,9 @@ header {
     text-align: center;
     border-bottom: lightgray solid;
 }
+.graphicProject:last-of-type{
+    border-bottom: none;
+}
 .graphicProject img {
     width: 325px;
     padding-bottom: 10%;
@@ -150,20 +156,22 @@ header {
     color: black;
     background-color: rgb(234, 232, 232);
     font-size: 1.5em;
-    margin: 10%;
-    margin-top: 0%;
+    width: fit-content;
+    height: fit-content;
+    margin: 10% auto;
+    padding: 2.5%;
 }
 .graphicProject a:hover {
     color: #FF6B6C;
     font-size: 2.25em;
 }
 .graphicProject h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 15%;
     font-weight: 400;
 }
 .graphicProject h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin: 5%;
     margin-bottom: 15%;
     font-weight: 300;
@@ -240,15 +248,11 @@ header {
         grid-row: 1/3;
     }
     /* picture viewer */
-    .viewer{
-        margin: 5%;
-    }
     .viewer-picture{
         width: 90%;
+        max-height: 76vh;
         height: auto;
         object-fit: contain;
-        justify-self: center;
-        align-self: center;
     }
     .close-viewer{
         background: none;
@@ -271,8 +275,9 @@ header {
         right:0;
         background-color: rgba(234, 232, 232, 0.75);
         display: grid;
+        margin: 5%;
+        place-items: center;
     }
-    
 }
 
 @media screen and (min-width: 1800px) {
@@ -291,6 +296,12 @@ header {
     }
     .name {
         font-size: 7em;
+    }
+    .header_nav a {
+        font-size: 2.5em;
+    }
+    .header_nav a:hover{
+        font-size: 2.6em;
     }
     /* about me */
     .about_me_page {
@@ -312,7 +323,40 @@ header {
         font-size: 3em;
     }
     .about_me_page a:hover {
-        font-size: 3.5em;
-        width: 25%;
+        font-size: 3.25em;
+    }
+    /* graphic design projects */
+    .graphicProject img {
+        width: 600px;
+    }
+    .graphicProject img:hover{
+        width: 650px;
+    }
+    .graphicProject a {
+        font-size: 2em;
+    }
+    .graphicProject a:hover {
+        font-size: 2.25em;
+    }
+    .graphicProject h1 {
+        font-size: 3em;
+    }
+    .graphicProject h2 {
+        font-size: 2em;
+    }
+    .title {
+        font-size: 4em;
+    }
+    /* viewer */
+    .viewer-picture{
+        width: auto;
+        max-height: 76vh;
+        max-width: 100vh;
+        height: 90%;
+    }
+    .viewer{
+        margin: 2.5% 15%;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
