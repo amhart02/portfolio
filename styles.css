@@ -32,6 +32,7 @@ header {
     align-self: center;
     width: 30%;
     margin-top: 8%;
+    margin-bottom: 8%;
     font-family: "Afacad Flux";
     font-size: 2em;
     background-color: none;
@@ -101,6 +102,7 @@ header {
 .about_me_page h1 {
     text-align: center;
     font-size: 2.5em;
+    font-weight: 400;
 }
 .about_me_page img {
     border-radius: 100%;
@@ -114,14 +116,17 @@ header {
     text-align: center;
     font-size: 1.5em;
     margin: 5%;
+    font-weight: 300;
 }
 .about_me_page a {
     text-align: center;
     font-size: 2em;
-    margin: 10% 25%;
+    margin: 10% auto;
     text-decoration: none;
     color: black;
     background-color: rgb(234, 232, 232);
+    width: 50%;
+    font-weight: 200;
 }
 .about_me_page a:hover{
     color: #FF6B6C;
@@ -136,8 +141,9 @@ header {
     border-bottom: lightgray solid;
 }
 .graphicProject img {
-    width: 350px;
+    width: 325px;
     padding-bottom: 10%;
+    justify-self: center;
 }
 .graphicProject a {
     text-decoration: none;
@@ -145,6 +151,7 @@ header {
     background-color: rgb(234, 232, 232);
     font-size: 1.5em;
     margin: 10%;
+    margin-top: 0%;
 }
 .graphicProject a:hover {
     color: #FF6B6C;
@@ -153,17 +160,23 @@ header {
 .graphicProject h1 {
     font-size: 2em;
     margin-top: 15%;
+    font-weight: 400;
 }
 .graphicProject h2 {
     font-size: 1.5em;
     margin: 5%;
     margin-bottom: 15%;
+    font-weight: 300;
 }
 .title {
     text-align: center;
     font-size: 2.5em;
     margin-top: 10%;
 }
+.viewer {
+    display: none;
+}
+
 @media screen and (min-width: 700px) {
     /* index */
     body {
@@ -200,16 +213,69 @@ header {
     .graphicProject {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-top: 3%;
+    }
+    .description {
+        align-self: center;
     }
     .graphicProject img {
         grid-column: 2/3;
+        align-self: center;
+        padding-left: 3%;
+    }
+    .graphicProject img:hover{
+        width: 350px;
     }
     .graphicProject h2 {
         grid-column: 1/2;
     }
+    .graphicProject a {
+        height: fit-content;
+        align-self: center;
+    }
+    .graphicProject a:hover {
+        font-size: 1.75em;
+    }
+    .posterProject {
+        grid-row: 1/3;
+    }
+    /* picture viewer */
+    .viewer{
+        margin: 5%;
+    }
+    .viewer-picture{
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+        justify-self: center;
+        align-self: center;
+    }
+    .close-viewer{
+        background: none;
+        color: black;
+        font-size: 2em;
+        border: none;
+        text-align: center;
+        height: fit-content;
+        margin-top: 3%;
+    }
+    .close-viewer:hover {
+        font-size: 2.5em;
+        color: #FF6B6C;
+    }
+    .viewer{
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background-color: rgba(234, 232, 232, 0.75);
+        display: grid;
+    }
+    
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1800px) {
     /* index */
     body {
         margin: 0 20%;
@@ -242,7 +308,6 @@ header {
     }
     .about_me_page a {
         grid-column: 1/3;
-        width: 20%;
         justify-self: center;
         font-size: 3em;
     }
