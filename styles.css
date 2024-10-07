@@ -96,6 +96,11 @@ body {
     .menu_button {
         display: none;
     }
+    .header_nav {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    border-bottom: lightgray solid;
+    }
     .header_nav a {
         font-size: 1.75em;
     }
