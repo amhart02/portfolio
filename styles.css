@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url("https://use.typekit.net/lch4hdh.css");
+
+
+body {
+    font-family: "Afacad Flux", sans-serif;
+}
+.header_nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.header_nav a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 20% 5%;
+    align-self: center;
+}
+.header_nav a:hover{
+    font-size: larger;
+    color: #FF6B6C;
+}
+.header_div {
+    display: flex;
+    flex-direction: column;
+}
+.menu_button {
+    align-self: center;
+    width: 30%;
+    margin-top: 8%;
+    font-family: "Afacad Flux";
+    font-size: 2em;
+    background-color: none;
+    border: none;
+    border-radius: 10%;
+}
+.name {
+    font-family: "memimas-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+}
+.main_div a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.about_me_section, .graphic_design_section, .programming_projects_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 5%;
+}
+.about_me_section a, .graphic_design_section a, .programming_projects_section a{
+    z-index: 6;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.85);  ;
+    padding: 5% 5%;
+    font-size: 1.5em;
+    border-radius: 4%;
+}
+.main:hover{
+    font-size: 2em;
+    color: #FF6B6C;
+}
+.pattern{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4%;
+}
+.footer_div {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: lightgray solid;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.footer_img {
+    width: 100%;
+    height: 70px;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        margin: 0 15%;
+    }
+    .menu_button {
+        display: none;
+    }
+    .header_nav a {
+        font-size: 1.75em;
+    }
+    .header_nav a:hover {
+        font-size: 2em;
+    }
+    .name {
+        font-size: 6em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        margin: 0 20%;
+    }
+    .pattern{
+        height: 400px;
+    }
+    .about_me_section a, .graphic_design_section a, .programming_projects_section a{
+        font-size: 2.75em;
+    }
+    .main:hover{
+        font-size: 3em;
+    }
+    .name {
+        font-size: 7em;
+    }
+}
