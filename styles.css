@@ -128,6 +128,42 @@ header {
     font-size: 2.25em;
 }
 
+/* graphic design projects */
+.graphicProject {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    border-bottom: lightgray solid;
+}
+.graphicProject img {
+    width: 350px;
+    padding-bottom: 10%;
+}
+.graphicProject a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(234, 232, 232);
+    font-size: 1.5em;
+    margin: 10%;
+}
+.graphicProject a:hover {
+    color: #FF6B6C;
+    font-size: 2.25em;
+}
+.graphicProject h1 {
+    font-size: 2em;
+    margin-top: 15%;
+}
+.graphicProject h2 {
+    font-size: 1.5em;
+    margin: 5%;
+    margin-bottom: 15%;
+}
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 10%;
+}
 @media screen and (min-width: 700px) {
     /* index */
     body {
@@ -159,7 +195,18 @@ header {
     }
     .about_me_page h2 {
         font-size: 2em;
-    }    
+    }  
+    /* graphic design projects */
+    .graphicProject {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .graphicProject img {
+        grid-column: 2/3;
+    }
+    .graphicProject h2 {
+        grid-column: 1/2;
+    }
 }
 
 @media screen and (min-width: 1000px) {
