@@ -184,6 +184,46 @@ header {
 .viewer {
     display: none;
 }
+ /* programming projects */
+.programmingTitle {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 10%;
+}
+.programmingProject {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    border-bottom: lightgray solid;
+}
+.programmingProject:last-of-type{
+    border-bottom: none;
+}
+.programmingProject a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(234, 232, 232);
+    font-size: 1.5em;
+    width: fit-content;
+    height: fit-content;
+    margin: 10% auto;
+    padding: 2.5%;
+}
+.programmingProject a:hover {
+    color: #FF6B6C;
+    font-size: 2.25em;
+}
+.programmingProject h1 {
+    font-size: 2.5em;
+    margin-top: 10%;
+    font-weight: 400;
+}
+.programmingProject h2 {
+    font-size: 1.6em;
+    margin: 5%;
+    margin-bottom: 5%;
+    font-weight: 300;
+}
 
 @media screen and (min-width: 700px) {
     /* index */
@@ -218,6 +258,9 @@ header {
         font-size: 2em;
     }  
     /* graphic design projects */
+    .title {
+        font-size: 3.5em;
+    }
     .graphicProject {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -273,10 +316,26 @@ header {
         left:0;
         bottom:0;
         right:0;
-        background-color: rgba(234, 232, 232, 0.75);
+        background-color: rgba(234, 232, 232, 0.85);
         display: grid;
         margin: 5%;
         place-items: center;
+    }
+    /* programming project */
+    .programmingTitle {
+        font-size: 3.5em;
+    }
+    .programmingProject h1 {
+        font-size: 3em;
+    }
+    .programmingProject h2 {
+        font-size: 2em;
+    }
+    .programmingProject a {
+        font-size: 2em;
+    }
+    .programmingProject a:hover {
+        font-size: 2.2em;
     }
 }
 
@@ -289,7 +348,7 @@ header {
         height: 400px;
     }
     .about_me_section a, .graphic_design_section a, .programming_projects_section a{
-        font-size: 2.75em;
+        font-size: 3.75em;
     }
     .main:hover{
         font-size: 3em;
@@ -358,5 +417,23 @@ header {
         margin: 2.5% 15%;
         display: flex;
         justify-content: space-evenly;
+    }
+    /* programming project */
+    .programmingTitle {
+        font-size: 4em;
+    }
+    .programmingProject h1 {
+        font-size: 3.5em;
+    }
+    .programmingProject h2 {
+        font-size: 2.5em;
+        margin: 10% 15%;
+        margin-bottom: 0;
+    }
+    .programmingProject a {
+        font-size: 2.5em;
+    }
+    .programmingProject a:hover {
+        font-size: 2.7em;
     }
 }
