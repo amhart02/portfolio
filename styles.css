@@ -19,9 +19,10 @@ header {
     text-align: center;
     margin: 20% 5%;
     align-self: center;
+    font-size: 1em;
 }
 .header_nav a:hover{
-    font-size: larger;
+    font-size: 1.3em;
     color: #FF6B6C;
 }
 .header_div {
@@ -121,7 +122,7 @@ header {
 }
 .about_me_page a {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.75em;
     height: fit-content;
     width: fit-content;
     text-decoration: none;
@@ -133,7 +134,7 @@ header {
 }
 .about_me_page a:hover{
     color: #FF6B6C;
-    font-size: 2.25em;
+    font-size: 2em;
 }
 
 /* graphic design projects */
@@ -229,7 +230,7 @@ header {
 @media screen and (min-width: 700px) {
     /* index */
     body {
-        margin: 0 15%;
+        margin: 0 10%;
     }
     .menu_button {
         display: none;
@@ -239,28 +240,28 @@ header {
     grid-template-columns: repeat(3, 1fr); 
     }
     .header_nav a {
-        font-size: 1.75em;
+        font-size: 1.25em;
     }
     .header_nav a:hover {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .name {
         font-size: 6em;
     }
     /* about me */
     .about_me_page h1 {
-        font-size: 4em;
+        font-size: 3.5em;
     }
     .about_me_page img {
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
     }
     .about_me_page h2 {
-        font-size: 2em;
+        font-size: 1.75em;
     }  
     /* graphic design projects */
     .title {
-        font-size: 3.5em;
+        font-size: 3em;
     }
     .graphicProject {
         display: grid;
@@ -274,19 +275,25 @@ header {
         grid-column: 2/3;
         align-self: center;
         padding-left: 3%;
+        width: 275px;
     }
     .graphicProject img:hover{
-        width: 350px;
+        width: 300px;
+    }
+    .graphicProject h1 {
+        font-size: 2em;
     }
     .graphicProject h2 {
         grid-column: 1/2;
+        font-size: 1.25em;
     }
     .graphicProject a {
         height: fit-content;
         align-self: center;
+        font-size: 1.25em;
     }
     .graphicProject a:hover {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
     .posterProject {
         grid-row: 1/3;
@@ -306,6 +313,7 @@ header {
         text-align: center;
         height: fit-content;
         margin-top: 3%;
+        cursor: pointer;
     }
     .close-viewer:hover {
         font-size: 2.5em;
@@ -324,44 +332,45 @@ header {
     }
     /* programming project */
     .programmingTitle {
-        font-size: 3.5em;
-    }
-    .programmingProject h1 {
         font-size: 3em;
     }
+    .programmingProject h1 {
+        font-size: 2.5em;
+    }
     .programmingProject h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .programmingProject a {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .programmingProject a:hover {
-        font-size: 2.2em;
+        font-size: 1.75em;
     }
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1100px) {
     /* index */
     body {
-        margin: 0 20%;
+        margin: 0 15%;
     }
     .pattern{
-        height: 400px;
+        height: 300px;
+        width: 90%;
     }
     .about_me_section a, .graphic_design_section a, .programming_projects_section a{
-        font-size: 3.75em;
-    }
-    .main:hover{
         font-size: 3em;
     }
+    .main:hover{
+        font-size: 3.25em;
+    }
     .name {
-        font-size: 7em;
+        font-size: 5em;
     }
     .header_nav a {
-        font-size: 2.5em;
+        font-size: 1.75em;
     }
     .header_nav a:hover{
-        font-size: 2.6em;
+        font-size: 1.8em;
     }
     /* about me */
     .about_me_page {
@@ -369,43 +378,50 @@ header {
         grid-template-columns: 1fr 1fr;
     }
     .about_me_page h1 {
-        grid-column: 1/2;
+        grid-column: 1/3;
+        font-size: 3em;
     }
     .about_me_page img {
         grid-column: 1/2;
+        height: 400px;
+        width: 400px;
     }
     .about_me_page h2 {
         grid-column: 2/3;
+        font-size: 1.4em;
+        align-self: center;
+        padding-left: 5%;
     }
     .about_me_page a {
         grid-column: 1/3;
         justify-self: center;
-        font-size: 3em;
+        font-size: 2em;
     }
     .about_me_page a:hover {
-        font-size: 3.25em;
+        font-size: 2.25em;
     }
     /* graphic design projects */
     .graphicProject img {
-        width: 600px;
+        width: 400px;
     }
     .graphicProject img:hover{
-        width: 650px;
+        width: 450px;
     }
     .graphicProject a {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .graphicProject a:hover {
-        font-size: 2.25em;
+        font-size: 1.75em;
     }
     .graphicProject h1 {
-        font-size: 3em;
-    }
-    .graphicProject h2 {
         font-size: 2em;
     }
+    .graphicProject h2 {
+        font-size: 1.5em;
+        margin: 10%;
+    }
     .title {
-        font-size: 4em;
+        font-size: 3em;
     }
     /* viewer */
     .viewer-picture{
@@ -427,20 +443,20 @@ header {
     }
     /* programming project */
     .programmingTitle {
-        font-size: 4em;
-    }
-    .programmingProject h1 {
         font-size: 3.5em;
     }
+    .programmingProject h1 {
+        font-size: 2.75em;
+    }
     .programmingProject h2 {
-        font-size: 2.5em;
-        margin: 10% 15%;
+        font-size: 1.75em;
+        margin: 10% 20%;
         margin-bottom: 0;
     }
     .programmingProject a {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
     .programmingProject a:hover {
-        font-size: 2.7em;
+        font-size: 1.75em;
     }
 }
