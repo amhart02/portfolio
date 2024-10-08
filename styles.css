@@ -150,6 +150,7 @@ header {
     width: 325px;
     padding-bottom: 10%;
     justify-self: center;
+    cursor: pointer;
 }
 .graphicProject a {
     text-decoration: none;
@@ -417,6 +418,12 @@ header {
         margin: 2.5% 15%;
         display: flex;
         justify-content: space-evenly;
+    }
+    .close-viewer{
+        font-size: 3em;
+    }
+    .close-viewer:hover {
+        font-size: 3.5em;
     }
     /* programming project */
     .programmingTitle {
