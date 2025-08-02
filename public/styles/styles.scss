@@ -1,0 +1,254 @@
+$accent-font: "memimas-pro", sans-serif;
+$body-font: "Afacad Flux", sans-serif;
+$text-color: hsl(0, 0%, 0%);
+$accent-color: hwb(0 57% 2%);
+$light-accent-color: hwb(0 69% 4%);
+$border-color: hsl(0, 0%, 83%);
+$background-color: hsl(0, 5%, 90%);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $body-font;
+}
+
+a {
+    text-decoration: none;
+}
+
+.a-button {
+    text-align: center;
+    font-size: 1.5rem;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: none;
+    color: $text-color;
+    background-color: $background-color;
+    transition: background-color 0.3s ease;
+    font-weight: 200;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    &:hover{
+        background-color: $light-accent-color;
+    }
+}
+
+.menu-icon {
+    width: 50px;
+    height: 75px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 50;
+    top: 1rem;
+    right: 1rem;
+    transition: left 0.3s ease;
+    justify-self: right;
+    margin-right: 1rem;
+    span,
+    span::before,
+    span::after {
+        content: "";
+        position: absolute;
+        height: 7.5px;
+        width: 100%;
+        background-color: $text-color;
+        transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+        border-radius: 10px;
+    }
+    span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    span::before {
+        top: -15px;
+    }
+    span::after {
+        top: 15px;
+    }
+}
+
+.menu-icon:hover span,
+.menu-icon:hover span::before,
+.menu-icon:hover span::after{
+    background-color: black;
+}
+
+.menu-icon.open {
+    left: 1rem;
+    position: fixed;
+    span {
+        background-color: transparent; 
+    }
+    & span::before {
+        transform: rotate(45deg);
+        top: 0;
+        background-color: $background-color;
+    }
+    & span::after {
+        transform: rotate(-45deg);
+        top: 0;
+        background-color: $background-color;
+    }
+    &:hover span::before,
+    &:hover span::after {
+        background-color: $border-color;
+    }
+}
+
+header {
+    padding: 7rem 1.5rem 5rem 1.5rem;
+    background-color: $accent-color;
+    background: linear-gradient(to bottom, $accent-color 0%, $background-color 50rem);
+    h1 {
+        margin: 0;
+        font-size: 3rem;
+    }
+    h2 {
+        font-family: $accent-font;
+        font-size: 3.5rem;
+        margin: 0;
+    }
+    h3 {
+        text-align: left;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-top: 2rem;
+    }
+}
+
+nav {
+    position: fixed;
+    left: -1000px; 
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0;
+    font-size: 2rem;
+    z-index: 10;
+    ul {
+        padding: 0;
+    }
+    li {
+        padding: 2rem 3rem;
+    }
+    a {
+        color: $background-color;
+        &:hover {
+            color: $border-color;
+        }
+    }
+}
+nav.open {
+    left: 0;
+}
+
+
+.index_page {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    img {
+        border-radius: 100%;
+        width: 275px;
+        height: 275px;
+        object-fit: cover;
+        justify-self: center;
+        margin-bottom: -5rem;
+        z-index: 5
+    }
+    p {
+        position: relative;
+        padding: 6rem 2.5rem 5rem 2.5rem;
+        font-size: 1.25rem;
+        background-color: $border-color;
+    }
+    a:nth-of-type(1) {
+        margin-top: -3rem;
+        z-index: 6;
+        background-color: $light-accent-color;
+    }
+    ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 5rem 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li {
+            padding: 0;
+            margin: 2rem;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+            font-size: 1.25rem;
+            color: $text-color;
+            border-radius: 100%;
+        }
+        li:nth-of-type(1) {
+            a {
+                background-color: $accent-color;
+            }
+        }
+        li:nth-of-type(2) {
+            a {
+                background-color: $light-accent-color;
+            }
+        }
+        li:nth-of-type(3) {
+            a {
+                background-color: $border-color;
+            }
+        }
+    }
+}
+
+.graphicDesign {
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.subpageHeader {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        margin-top: 1rem;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    background: linear-gradient(to top, $accent-color 0%, $background-color 20rem);
+    p {
+        text-align: center;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        transition: transform ease 0.3s;
+        &:hover {
+            transform: scale(1.1)
+        }
+    } 
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+}

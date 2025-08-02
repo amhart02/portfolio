@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.a-button {
+  text-align: center;
+  font-size: 1.5rem;
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 5%, 90%);
+  transition: background-color 0.3s ease;
+  font-weight: 200;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.a-button:hover {
+  background-color: hsl(0, 77.1428571429%, 82.5%);
+}
+
+.menu-icon {
+  width: 50px;
+  height: 75px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 50;
+  top: 1rem;
+  right: 1rem;
+  transition: left 0.3s ease;
+  justify-self: right;
+  margin-right: 1rem;
+}
+.menu-icon span,
+.menu-icon span::before,
+.menu-icon span::after {
+  content: "";
+  position: absolute;
+  height: 7.5px;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  border-radius: 10px;
+}
+.menu-icon span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-icon span::before {
+  top: -15px;
+}
+.menu-icon span::after {
+  top: 15px;
+}
+
+.menu-icon:hover span,
+.menu-icon:hover span::before,
+.menu-icon:hover span::after {
+  background-color: black;
+}
+
+.menu-icon.open {
+  left: 1rem;
+  position: fixed;
+}
+.menu-icon.open span {
+  background-color: transparent;
+}
+.menu-icon.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+  background-color: hsl(0, 5%, 90%);
+}
+.menu-icon.open span::after {
+  transform: rotate(-45deg);
+  top: 0;
+  background-color: hsl(0, 5%, 90%);
+}
+.menu-icon.open:hover span::before, .menu-icon.open:hover span::after {
+  background-color: hsl(0, 0%, 83%);
+}
+
+header {
+  padding: 7rem 1.5rem 5rem 1.5rem;
+  background-color: hsl(0, 91.1111111111%, 77.5%);
+  background: linear-gradient(to bottom, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 5%, 90%) 50rem);
+}
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+header h2 {
+  font-family: "memimas-pro", sans-serif;
+  font-size: 3.5rem;
+  margin: 0;
+}
+header h3 {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+nav {
+  position: fixed;
+  left: -1000px;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  font-size: 2rem;
+  z-index: 10;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  padding: 2rem 3rem;
+}
+nav a {
+  color: hsl(0, 5%, 90%);
+}
+nav a:hover {
+  color: hsl(0, 0%, 83%);
+}
+
+nav.open {
+  left: 0;
+}
+
+.index_page {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.index_page img {
+  border-radius: 100%;
+  width: 275px;
+  height: 275px;
+  object-fit: cover;
+  justify-self: center;
+  margin-bottom: -5rem;
+  z-index: 5;
+}
+.index_page p {
+  position: relative;
+  padding: 6rem 2.5rem 5rem 2.5rem;
+  font-size: 1.25rem;
+  background-color: hsl(0, 0%, 83%);
+}
+.index_page a:nth-of-type(1) {
+  margin-top: -3rem;
+  z-index: 6;
+  background-color: hsl(0, 77.1428571429%, 82.5%);
+}
+.index_page ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 5rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index_page ul li {
+  padding: 0;
+  margin: 2rem;
+}
+.index_page ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 0%);
+  border-radius: 100%;
+}
+.index_page ul li:nth-of-type(1) a {
+  background-color: hsl(0, 91.1111111111%, 77.5%);
+}
+.index_page ul li:nth-of-type(2) a {
+  background-color: hsl(0, 77.1428571429%, 82.5%);
+}
+.index_page ul li:nth-of-type(3) a {
+  background-color: hsl(0, 0%, 83%);
+}
+
+.graphicDesign img {
+  width: 200px;
+  height: 200px;
+}
+
+.subpageHeader h1 {
+  font-size: 1.5rem;
+}
+.subpageHeader h2 {
+  font-size: 2.5rem;
+}
+.subpageHeader h3 {
+  margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  background: linear-gradient(to top, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 5%, 90%) 20rem);
+}
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform ease 0.3s;
+}
+footer img:hover {
+  transform: scale(1.1);
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=styles.css.map */
