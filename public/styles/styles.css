@@ -94,7 +94,7 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 header h2 {
   font-family: "memimas-pro", sans-serif;
@@ -110,7 +110,7 @@ header h3 {
 
 nav {
   position: fixed;
-  left: -1000px;
+  left: -3000px;
   top: 0;
   background-color: black;
   width: 100%;
