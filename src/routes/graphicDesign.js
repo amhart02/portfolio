@@ -1,18 +1,14 @@
 import { Router } from 'express';
-//import website array
+// import graphic design array
 
 const router = Router()
 
 router.get('/', (req, res) => {
-    const title = "Websites";
+    const title = "Graphic Design Projects";
     const h1 = "Alayna Hart";
-    const h2 = "Websites";
+    const h2 = "Graphic Design";
     const h3 = "Web Designer and Developer"
-<<<<<<< HEAD
     res.render('projects', { title, h1, h2, h3 });
-=======
-    res.render('projecrs', { title, h1, h2, h3 });
->>>>>>> 604840d3b4d4aeecfd6867d3a791acaf404fba7e
 })
 
 router.get('/:id', (req, res) => {
