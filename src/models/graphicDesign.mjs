@@ -1,0 +1,1 @@
+//create array with graphic design projects
