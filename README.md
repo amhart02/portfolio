@@ -7,6 +7,5 @@
 4. Getting started with [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ## Fun thing to do: (Try it with yours)
-Donate to a poor college student? Feel free to buy me some [energy](https://venmo.com/code?user_id=2946059366039552553)
+Donate to a poor college student? Feel free to buy me some [energy](https://venmo.com/alayna-hart)
 
-But yeah, this is an example pull request, and some notes on how to get started. Curious if you also have a commenting strategy?
