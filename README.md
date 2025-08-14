@@ -6,6 +6,5 @@
 3. Check out [this repo](https://github.com/expressjs/express) for a good example
 4. Getting started with [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-## Fun thing to do: (Try it with yours)
 Donate to a poor college student? Feel free to buy me some [energy](https://venmo.com/alayna-hart)
 
