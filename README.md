@@ -6,10 +6,10 @@ This website showcases my background in graphic design, web development, and pro
 
 ### This project was created using:
 <p>
-<img src="public/images/sass.png" alt="Sass Logo" width="75">&nbsp;&nbsp;&nbsp;
-<img src="public/images/nodejs.webp" alt="Node JS Logo" width="75">&nbsp;&nbsp;&nbsp;
-<img src="public/images/express.png" alt="Express Logo" width="75">&nbsp;&nbsp;&nbsp;
-<img src="public/images/ejs.png" alt="EJS Logo" width="75">&nbsp;&nbsp;&nbsp;
+<img src="public/images/icons/sass.png" alt="Sass Logo" width="75">&nbsp;&nbsp;&nbsp;
+<img src="public/images/icons/nodejs.webp" alt="Node JS Logo" width="75">&nbsp;&nbsp;&nbsp;
+<img src="public/images/icons/express.png" alt="Express Logo" width="75">&nbsp;&nbsp;&nbsp;
+<img src="public/images/icons/ejs.png" alt="EJS Logo" width="75">&nbsp;&nbsp;&nbsp;
 </p>
 
 ### Future Improvement Ideas:
@@ -25,8 +25,8 @@ This website showcases my background in graphic design, web development, and pro
   
 #### Have a project idea, job opportunity, or just want to say hi?  
 <p>
-<a href="mailto:amhartful@gmail.com"><img src="public/images/gmail_logo.png" alt="Email Logo" width="75"></a>&nbsp;&nbsp;&nbsp;
-<a href="linkedin.com/in/alayna-hart2"><img src="public/images/clipart1619304.png" alt="Email Logo" width="75"></a>&nbsp;&nbsp;&nbsp;
+<a href="mailto:amhartful@gmail.com"><img src="public/images/icons/gmail.png" alt="Email Logo" width="75"></a>&nbsp;&nbsp;&nbsp;
+<a href="linkedin.com/in/alayna-hart2"><img src="public/images/icons/linkedin.png" alt="Email Logo" width="75"></a>&nbsp;&nbsp;&nbsp;
 </p>
 
 
