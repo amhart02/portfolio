@@ -2,8 +2,9 @@
 
 This website showcases my background in graphic design, web development, and programming. I’m passionate about continually learning new skills, techniques, and ideas as a developer. I’d love to hear your thoughts and suggestions for improvement!
 
-This project was created using:
+### <a href="https://portfolio-svkb.onrender.com/" >Click Here</a> to view the website!
 
+### This project was created using:
 <p>
 <img src="public/images/sass.png" alt="Sass Logo" width="75">&nbsp;&nbsp;&nbsp;
 <img src="public/images/nodejs.webp" alt="Node JS Logo" width="75">&nbsp;&nbsp;&nbsp;
@@ -11,27 +12,21 @@ This project was created using:
 <img src="public/images/ejs.png" alt="EJS Logo" width="75">&nbsp;&nbsp;&nbsp;
 </p>
 
-Future Improvement Ideas:
--Create an image carousel to showcase my graphic design projects
--
--
+### Future Improvement Ideas:
+- Create an image carousel to showcase my graphic design projects
+- Add features that integrate a database to gain hands-on practice
+- Prioritize accessible design to improve SEO and ensure usability for all users
 
 
-//future project ideas
-
-//future improvements 
-
-## <a href="https://portfolio-svkb.onrender.com/" >Click Here</a> to view the website!
-
-You can reach me here:
-
-
-//do this
+### Future Project Ideas:
+- Build an Express app where users can create quizzes on their favorite subjects and play quizzes created by others.
+- Engage in a website redesign challenge by recreating a popular website using figma
+- Have an idea? Send it my way!  
+  
+#### Have a project idea, job opportunity, or just want to say hi?  
 <p>
-<a href="mailto:amhartful@gmail.com><img src="public/images/gmail_logo.png" alt="Email Logo" width="75"></a>&nbsp;&nbsp;&nbsp;
-<img src="public/images/nodejs.webp" alt="Node JS Logo" width="75">&nbsp;&nbsp;&nbsp;
-<img src="public/images/express.png" alt="Express Logo" width="75">&nbsp;&nbsp;&nbsp;
-<img src="public/images/ejs.png" alt="EJS Logo" width="75">&nbsp;&nbsp;&nbsp;
+<a href="mailto:amhartful@gmail.com"><img src="public/images/gmail_logo.png" alt="Email Logo" width="75"></a>&nbsp;&nbsp;&nbsp;
+<a href="linkedin.com/in/alayna-hart2"><img src="public/images/clipart1619304.png" alt="Email Logo" width="75"></a>&nbsp;&nbsp;&nbsp;
 </p>
 
 
