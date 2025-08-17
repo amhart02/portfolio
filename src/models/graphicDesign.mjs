@@ -1,1 +1,10 @@
-//create array with graphic design projects
+const graphicDesign = [
+    {
+        title: "",
+        description: "",
+        software:[""],
+        date: "",
+        link: "",
+        images: [""]
+    }
+]

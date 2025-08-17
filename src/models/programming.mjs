@@ -1,1 +1,9 @@
-//create array with programming projects
+const programming = [
+    {
+        title: "",
+        description: "",
+        software:["Python"],
+        date: "",
+        link: "",
+    }
+]
