@@ -1,5 +1,5 @@
 import { Router } from 'express';
-// import graphic design array
+import graphicDesign from '../models/graphicDesign.mjs'
 
 const router = Router()
 
