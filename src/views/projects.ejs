@@ -1,97 +1,17 @@
 <%- include('partials/header') %>
     <main>
-        <!-- loop through the array and display each project -->
+        <% projects.forEach(project => { %>
+            <% if (project.category === "programming") { %>
+                <h4><%= project.title %></h4>
+                <p><%= project.description %></p>
+                <p>Software Used: <%= project.software.join(", ") %></p>
+                <p>Date: <%= project.date %></p>
+                <a href="<%= project.link %>" target="_blank">View GitHub</a>
+            <% } else { %>
+                <h4><%= project.title %></h4>
+                <img src="<%= project.image %>" alt="<%= project.title %>">
+                <a href="/<%= project.category %>/<%= project.id %>">View Details</a>
+            <% } %>
+        <% }); %>
     </main>
 <%- include('partials/footer') %>
-
-<!-- <h1 class="programmingTitle">Programming Projects</h1>
-        <section class="programmingProject">
-            <section class="description">
-                <h1>Portfolio Practice Website</h1>
-                <h2>In my first web development class, I built a practice portfolio website to showcase my academic journey. The site featured three distinct pages: the first describing html and css principles, one highlighting the courses I had completed, and another showcasing my projects. Throughout the process, I applied fundamental web design principles that I had learned.</h2>
-            </section>
-            <a href="https://amhart02.github.io/wdd130/portfolio/index.html" target="_blank" rel="noopener noreferrer">Click Here to View Website</a>
-        </section>
-        <section class="programmingProject">
-            <section class="description">
-                <h1>My Favorite Movies Website</h1>
-                <h2>In my second web development class, I designed a two-page website featuring my favorite movies and a movie trivia game. The first page includes a list of my favorite films, each accompanied by a title, description, and image. The page also allows users to search and sort the movies dynamically. The second page offers a trivia game where users can test their knowledge by answering questions related to the featured films.</h2>
-            </section>
-            <a href="https://amhart02.github.io/wdd131/movies/index.html" target="_blank" rel="noopener noreferrer">Click Here to View Website</a>
-        </section>
-        <section class="programmingProject">
-            <section class="description">
-                <h1>Family History Project</h1>
-                <h2>In this project, I used Python and CSV files to develop an interactive family history experience. I created a dataset of fictional ancestors and paired it with a file of fun facts from significant years in those ancestors' lives. Users can do activities with the data in several ways, including calculating an ancestor’s age at key events in their lives, sorting the list of ancestors, discovering fun facts from an ancestor's birth year, and adding new ancestors to the list.</h2>
-            </section>
-            <a href="https://github.com/amhart02/Family-History-Project" target="_blank" rel="noopener noreferrer">Click Here to View GitHub</a>
-        </section>
-        <section class="programmingProject">
-            <section>
-                <h1>E-Commerce Project</h1>
-                <h2>This project is a mock e-commerce application built using C#. It allows users to browse available products, add and remove items from their cart, view the cart's contents, create an order, and review order details. The project demonstrates the use of object-oriented programming.</h2>
-            </section>
-            <a href="https://github.com/amhart02/e-commerce-project" target="_blank" rel="noopener noreferrer">Click Here to View GitHub</a>
-        </section> -->
-        <!-- <section>
-            <h1>cit 225 final project</h1>
-        </section> -->
-
-        <!-- <h1 class="title">Graphic Design Projects</h1>
-        <section class="graphicProject">
-            <section class="description">
-                <h1>Logo Project</h1>
-                <h2>For this project, I created a unique logo for a fictional baseball cap company featuring a turtle mascot. The project guidelines required the use of a maximum of three colors and the incorporation of shapes, rather than strokes.</h2>
-            </section>
-            <img class="projectImg" src="images/logoProject.jpg" alt="Logo project">
-        </section>
-        <section class="graphicProject">
-            <section class="description">
-                <h1>Album Project</h1>
-                <h2>This album cover was created for Haupe by Duke Ellington (1959) as part of an assignment to design a cover for an instrumental song produced before the 1960s. The project specifications allowed for only five colors and required the use of basic shapes (triangle, circle, rectangle, and line), along with the song title, artist's name, and year of release.</h2>
-            </section>
-            <img class="projectImg" src="images/albumProject.jpg" alt="Album Project">
-        </section>
-        <section class="graphicProject">
-            <section class="description posterProject">
-                <h1>Poster Project</h1>
-                <h2>For this assignment, I designed two posters based on Shakespeare's Pericles. The task was to create a symbolic and typographic representation that captured the emotion and meaning of the play. Specific fonts, colors, and symbols attributed to the overall design of the posters.</h2>
-            </section>
-            <img class="projectImg" src="images/symbolPoster.jpg" alt="Pericles Symbol Poster">
-            <img class="projectImg" src="images/typePoster.jpg" alt="Pericles Type Poster">
-        </section>
-        <section class="graphicProject">
-            <section class="description">
-                <h1>Pin Project</h1>
-                <h2>In this project, I designed a pin and packaging centered around the theme "groovy." Using Adobe Illustrator to craft the design and Adobe Photoshop to enhance it, I applied shadows and highlights to give the pin a realistic, three-dimensional appearance. The project also involved simulating the product's packaging for a cohesive presentation.</h2>
-            </section>
-            <img class="projectImg" src="images/pinProject.jpg" alt="Pin Project">
-        </section>
-        <section class="graphicProject">
-            <section class="description">
-                <h1>Insect Project</h1>
-                <h2>For this project, I created a detailed illustration of a butterfly, drawing inspiration from a real Lepidoptera species. Using Adobe Illustrator, I recreated each element to ensure the accuracy of the insect's features, paying close attention to color, texture, and symmetry.</h2>
-            </section>
-            <img class="projectImg" src="images/insectDrawing.jpg" alt="Insect Project">
-        </section>
-        <section class="graphicProject">
-            <section class="description">
-                <h1>Glyph Project</h1>
-                <h2>This project involved creating two cohesive designs using glyphs from two different fonts: Neue Haas Grotesk Display Pro (sans-serif) and Stempel Garamond Lt Std (serif). The goal was to develop a design that visually expressed the unique characteristics and mood of each font style.</h2>
-            </section>
-            <img class="projectImg" src="images/glyphProject.jpg" alt="Glyph Project Posters on a wall">
-        </section>
-        <section class="graphicProject">
-            <section class="description">
-                <h1>BYUI Campus Map</h1>
-                <h2>For this project, I designed a campus map for BYU-Idaho using Adobe InDesign, Illustrator, and Photoshop. The map features detailed guides, photographs of students, and descriptions of key buildings on campus. Overall layout and usability was kept in mind during the development process.</h2>
-            </section>
-            <a href="images/byuiCampusMap.pdf" target="_blank" rel="noopener noreferrer">Click Here to View Project</a>
-        </section>
-        <section class="graphicProject">
-            <section class="description">
-                <h1>Art Gallery Booklet</h1>
-                <h2>I created a mock art gallery booklet for a fictional exhibit featuring the works of Piet Mondrian. This project, designed in Adobe InDesign, Illustrator, and Photoshop, required the inclusion of eight pieces from Mondrian's collection and a description of the artist. </h2>
-            </section>
-            <a href="images/artGalleryBooklet.pdf" target="_blank" rel="noopener noreferrer">Click Here to View Project</a>
-        </section> -->
