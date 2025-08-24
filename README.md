@@ -1,3 +1,12 @@
+# Calebs Notes Part 2:
+
+Consider looking at using a [license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
+MIT would be a solid one.
+
+Want to add a [contributing.md?](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
+
+Pull [request template?](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+
 # Welcome to My Portfolio!
 
 This website showcases my background in graphic design, web development, and programming. I’m passionate about continually learning new skills, techniques, and ideas as a developer. I’d love to hear your thoughts and suggestions for improvement!
