@@ -1,10 +1,10 @@
 $accent-font: "memimas-pro", sans-serif;
 $body-font: "Afacad Flux", sans-serif;
-$text-color: hsl(0, 0%, 0%);
-$accent-color: hwb(0 57% 2%);
-$light-accent-color: hwb(0 69% 4%);
-$border-color: hsl(0, 0%, 83%);
-$background-color: hsl(0, 5%, 90%);
+$black: hsl(0, 0%, 0%);
+$pink: hwb(0 57% 2%);
+$light-pink: hwb(0 69% 4%);
+$light-gray: hsl(0, 0%, 83%);
+$white: hsl(0, 5%, 90%);
 
 body {
     margin: 0;
@@ -22,15 +22,15 @@ a {
     height: fit-content;
     width: fit-content;
     text-decoration: none;
-    color: $text-color;
-    background-color: $background-color;
-    transition: background-color 0.3s ease;
+    color: $black;
+    background-color: $white;
+    transition: $white 0.3s ease;
     font-weight: 200;
     margin: 1rem auto;
     padding: 1rem;
     border-radius: 10px;
     &:hover{
-        background-color: $light-accent-color;
+        background-color: $light-pink;
     }
 }
 
@@ -52,7 +52,7 @@ a {
         position: absolute;
         height: 7.5px;
         width: 100%;
-        background-color: $text-color;
+        background-color: $black;
         transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
         border-radius: 10px;
     }
@@ -71,7 +71,7 @@ a {
 .menu-icon:hover span,
 .menu-icon:hover span::before,
 .menu-icon:hover span::after{
-    background-color: black;
+    background-color: $black;
 }
 
 .menu-icon.open {
@@ -83,23 +83,23 @@ a {
     & span::before {
         transform: rotate(45deg);
         top: 0;
-        background-color: $background-color;
+        background-color: $white
     }
     & span::after {
         transform: rotate(-45deg);
         top: 0;
-        background-color: $background-color;
+        background-color: $white;
     }
     &:hover span::before,
     &:hover span::after {
-        background-color: $border-color;
+        background-color: $light-gray;
     }
 }
 
 header {
     padding: 7rem 1.5rem 5rem 1.5rem;
-    background-color: $accent-color;
-    background: linear-gradient(to bottom, $accent-color 0%, $background-color 50rem);
+    background-color: $pink;
+    background: linear-gradient(to bottom, $pink 0%, $white 50rem);
     h1 {
         margin: 0;
         font-size: 2.5rem;
@@ -115,13 +115,16 @@ header {
         font-weight: 400;
         margin-top: 2rem;
     }
+    a {
+        color: $black;
+    }
 }
 
 nav {
     position: fixed;
     left: -3000px; 
     top: 0;
-    background-color: black;
+    background-color: $black;
     width: 100%;
     height: 100%;
     padding: 4rem 0;
@@ -134,9 +137,9 @@ nav {
         padding: 2rem 3rem;
     }
     a {
-        color: $background-color;
+        color: $white;
         &:hover {
-            color: $border-color;
+            color: $light-gray;
         }
     }
 }
@@ -162,12 +165,12 @@ nav.open {
         position: relative;
         padding: 6rem 2.5rem 5rem 2.5rem;
         font-size: 1.25rem;
-        background-color: $border-color;
+        background-color: $light-gray;
     }
     a:nth-of-type(1) {
         margin-top: -3rem;
         z-index: 6;
-        background-color: $light-accent-color;
+        background-color: $light-pink;
     }
     ul {
         margin: 0;
@@ -188,51 +191,38 @@ nav.open {
             width: 250px;
             height: 250px;
             font-size: 1.25rem;
-            color: $text-color;
+            color: $black;
             border-radius: 100%;
         }
         li:nth-of-type(1) {
             a {
-                background-color: $accent-color;
+                background-color: $pink;
             }
         }
         li:nth-of-type(2) {
             a {
-                background-color: $light-accent-color;
+                background-color: $light-pink;
             }
         }
         li:nth-of-type(3) {
             a {
-                background-color: $border-color;
+                background-color: $light-gray;
             }
         }
     }
 }
 
-.graphicDesign {
-    img {
-        width: 200px;
-        height: 200px;
-    }
-}
+// .programming {
 
-.subpageHeader {
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        margin-top: 1rem;
-    }
-}
+// }
+
+
 
 footer {
     display: flex;
     flex-direction: column;
     padding: 3rem 4rem;
-    background: linear-gradient(to top, $accent-color 0%, $background-color 20rem);
+    background: linear-gradient(to top, $pink 0%, $white 20rem);
     p {
         text-align: center;
         font-size: 1rem;

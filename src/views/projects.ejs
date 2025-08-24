@@ -1,6 +1,7 @@
 <%- include('partials/header') %>
-    <main>
+    <main class="<%= projects[0].category %>">
         <% projects.forEach(project => { %>
+            <div>
             <% if (project.category === "programming") { %>
                 <h4><%= project.title %></h4>
                 <p><%= project.description %></p>
@@ -12,6 +13,7 @@
                 <img src="<%= project.image %>" alt="<%= project.title %>">
                 <a href="/<%= project.category %>/<%= project.id %>">View Details</a>
             <% } %>
+            </div>
         <% }); %>
     </main>
 <%- include('partials/footer') %>
