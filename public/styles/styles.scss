@@ -290,128 +290,62 @@ footer {
     }
 }
 
-//add media queries
-
-// Mobile optimizations
+// Tablet and mobile optimizations
 @media (max-width: 768px) {
     header {
         padding: 5rem 1rem 3rem 1rem;
         h2 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
         }
         h3 {
             font-size: 1.1rem;
         }
     }
 
-    .index_page {
-        padding: 2rem 0;
-        img {
-            width: 200px;
-            height: 200px;
-            margin-bottom: -3rem;
-        }
-        p {
-            padding: 4rem 1.5rem 3rem 1.5rem;
-            font-size: 1.1rem;
-        }
-        a:nth-of-type(1) {
-            margin-top: -2rem;
-        }
-        ul {
-            padding: 3rem 1rem 0 1rem;
-            li {
-                margin: 1.5rem;
-            }
-            a {
-                width: 180px;
-                height: 180px;
-                font-size: 1.1rem;
-            }
-        }
-    }
-
     .projects {
         margin: 1rem 0;
         div {
-            margin: 3rem 1rem;
-            padding: 1rem;
+            margin: 2rem 1rem;
+            padding: 1.2rem;
         }
         h4 {
-            margin: -1rem -1rem 1rem -1rem;
-            padding: 0.75rem 1rem;
-            font-size: 1.1rem;
-            background: $pink;
+            margin: -1.2rem -1.2rem 1rem -1.2rem;
+            padding: 0.8rem;
+            font-size: 1rem;
+            text-align: center;
         }
         img {
             padding: 2rem 1rem;
             margin: 1rem 0;
         }
         a {
-            margin: 1rem -1rem -1rem -1rem;
-            padding: 0.75rem 1rem;
+            margin: 1rem -1.2rem -1.2rem -1.2rem;
+            padding: 0.8rem;
             font-size: 1rem;
-            background: $light-pink;
-            align-self: stretch !important;
             text-align: center;
+            align-self: stretch !important;
         }
         div:nth-of-type(even) a {
             align-self: stretch !important;
         }
         div:nth-of-type(even) h4 {
             align-self: stretch;
-            text-align: left;
+            text-align: center;
         }
         .programming {
             p {
                 margin: 0.5rem 0;
-                font-size: 0.95rem;
-                line-height: 1.4;
+                font-size: 1rem;
+                line-height: 1.5;
             }
         }
     }
 
-    footer {
-        padding: 2rem 1.5rem;
-        p {
-            font-size: 0.9rem;
-        }
-        div {
-            justify-content: center;
-            gap: 2rem;
-        }
-    }
-
     nav {
-        padding: 3rem 0;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         li {
-            padding: 1.5rem 2rem;
+            padding: 1.8rem 2.5rem;
         }
-    }
-
-    .menu-icon {
-        width: 40px;
-        height: 60px;
-        top: 1.5rem;
-        right: 1.5rem;
-        span,
-        span::before,
-        span::after {
-            height: 6px;
-        }
-        span::before {
-            top: -12px;
-        }
-        span::after {
-            top: 12px;
-        }
-    }
-
-    .a-button {
-        font-size: 1.2rem;
-        padding: 0.8rem 1.2rem;
-        margin: 0.8rem auto;
     }
 }
 
@@ -423,27 +357,11 @@ footer {
             font-size: 1.3rem;
         }
         h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
         h3 {
             font-size: 1rem;
             margin-top: 1.5rem;
-        }
-    }
-
-    .index_page {
-        img {
-            width: 150px;
-            height: 150px;
-        }
-        p {
-            padding: 3rem 1rem 2.5rem 1rem;
-            font-size: 1rem;
-        }
-        ul a {
-            width: 140px;
-            height: 140px;
-            font-size: 1rem;
         }
     }
 
@@ -454,25 +372,41 @@ footer {
         }
         h4 {
             margin: -0.8rem -0.8rem 1rem -0.8rem;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            padding: 0.7rem;
         }
         a {
             margin: 1rem -0.8rem -0.8rem -0.8rem;
             font-size: 0.9rem;
+            padding: 0.7rem;
         }
-        .programming p {
-            font-size: 0.9rem;
+        .programming {
+            p {
+                font-size: 0.9rem;
+            }
         }
     }
 
-    footer {
-        padding: 1.5rem 1rem;
-        div {
-            gap: 1.5rem;
+    nav {
+        font-size: 1.5rem;
+        li {
+            padding: 1.3rem 2rem;
         }
-        img {
-            width: 35px;
-            height: 35px;
+    }
+
+    .menu-icon {
+        width: 35px;
+        height: 55px;
+        span,
+        span::before,
+        span::after {
+            height: 5px;
+        }
+        span::before {
+            top: -10px;
+        }
+        span::after {
+            top: 10px;
         }
     }
 }
