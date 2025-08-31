@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
+  background-color: hsl(0, 0%, 95%);
 }
 
 a {
@@ -16,8 +17,8 @@ a {
   width: fit-content;
   text-decoration: none;
   color: hsl(0, 0%, 0%);
-  background-color: hsl(0, 5%, 90%);
-  transition: hsl(0, 5%, 90%) 0.3s ease;
+  background-color: hsl(0, 0%, 100%);
+  transition: hsl(0, 0%, 100%) 0.3s ease;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 10px;
@@ -76,36 +77,40 @@ a {
 .menu-icon.open span::before {
   transform: rotate(45deg);
   top: 0;
-  background-color: hsl(0, 5%, 90%);
+  background-color: hsl(0, 0%, 100%);
 }
 .menu-icon.open span::after {
   transform: rotate(-45deg);
   top: 0;
-  background-color: hsl(0, 5%, 90%);
+  background-color: hsl(0, 0%, 100%);
 }
 .menu-icon.open:hover span::before, .menu-icon.open:hover span::after {
-  background-color: hsl(0, 0%, 83%);
+  background-color: hsl(0, 0%, 95%);
 }
 
 header {
   padding: 7rem 1.5rem 5rem 1.5rem;
   background-color: hsl(0, 91.1111111111%, 77.5%);
-  background: linear-gradient(to bottom, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 5%, 90%) 50rem);
+  background: linear-gradient(to bottom, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 0%, 100%) 50rem);
 }
 header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-header h2 {
   font-family: "Quicksand", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 0;
   font-weight: 600;
+}
+header h2 {
+  margin: 0;
+}
+header h2 a {
+  font-size: 1rem;
+  color: hsl(0, 0%, 25%);
 }
 header h3 {
   text-align: left;
   font-size: 1.25rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  color: hsl(0, 0%, 25%);
 }
 header a {
   color: hsl(0, 0%, 0%);
@@ -129,10 +134,10 @@ nav li {
   padding: 2rem 3rem;
 }
 nav a {
-  color: hsl(0, 5%, 90%);
+  color: hsl(0, 0%, 100%);
 }
 nav a:hover {
-  color: hsl(0, 0%, 83%);
+  color: hsl(0, 0%, 95%);
 }
 
 nav.open {
@@ -157,7 +162,7 @@ nav.open {
   position: relative;
   padding: 6rem 2.5rem 5rem 2.5rem;
   font-size: 1.25rem;
-  background-color: hsl(0, 0%, 83%);
+  background-color: hsl(0, 0%, 80%);
 }
 .index_page a:nth-of-type(1) {
   margin-top: -3rem;
@@ -195,63 +200,64 @@ nav.open {
   background-color: hsl(0, 77.1428571429%, 82.5%);
 }
 .index_page ul li:nth-of-type(3) a {
-  background-color: hsl(0, 0%, 83%);
+  background-color: hsl(0, 0%, 80%);
 }
 
-.projects {
+.projects, .project {
   margin: 2rem 0;
 }
-.projects div {
+.projects .card, .project .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 1.5rem;
   margin: 5rem 3rem;
-}
-.projects div:nth-of-type(even) a {
-  align-self: flex-start;
-}
-.projects div:nth-of-type(even) h4 {
-  align-self: flex-end;
-}
-.projects .programming {
-  background-color: hsl(0, 0%, 83%);
-}
-.projects h4 {
-  background-color: hsl(0, 91.1111111111%, 77.5%);
-  margin: -1.5rem -3rem;
-  z-index: 6;
-  padding: 0.75rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  font-size: 1rem;
-  align-self: flex-start;
-  background: linear-gradient(to right, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 77.1428571429%, 82.5%) 10rem);
 }
-.projects img {
+.projects .software, .projects .date, .project .software, .project .date {
+  color: hsl(0, 0%, 45%);
+  margin: 0;
+}
+.projects h4, .project h4 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0 0;
+}
+.projects img, .project img {
   width: 100%;
   height: auto;
-  background-color: hsl(0, 0%, 83%);
-  border-radius: 8px;
-  padding: 4rem 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  border-bottom: solid 2px hsl(0, 0%, 80%);
+  align-self: center;
 }
-.projects a {
-  background-color: hsl(0, 77.1428571429%, 82.5%);
-  color: hsl(0, 0%, 0%);
-  z-index: 6;
-  padding: 0.75rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  margin: -1.5rem -3rem;
-  align-self: flex-end;
-  background: linear-gradient(to left, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 77.1428571429%, 82.5%) 6rem);
+.projects a, .project a {
+  color: hsl(0, 74.7368421053%, 52.5%);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 1rem 0;
+}
+
+.project img {
+  border-bottom: none;
+}
+.project .backTitle {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.project .backTitle a {
+  margin-right: 1rem;
+}
+.project h4 {
+  margin: 1rem;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   padding: 3rem 4rem;
-  background: linear-gradient(to top, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 5%, 90%) 20rem);
+  background: linear-gradient(to top, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 0%, 100%) 20rem);
 }
 footer p {
   text-align: center;

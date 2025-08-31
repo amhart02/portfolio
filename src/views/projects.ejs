@@ -3,17 +3,17 @@
         <% projects.forEach(project => { %>
             
             <% if (project.category === "programming") { %>
-                <div class="programming">
+                <div class="programming card">
                     <h4><%= project.title %></h4>
                     <p><%= project.description %></p>
-                    <p>Software Used: <%= project.software.join(", ") %></p>
-                    <p>Date: <%= project.date %></p>
+                    <p class="software">Software Used: <%= project.software.join(", ") %></p>
+                    <p class="date">Date: <%= project.date %></p>
                     <a href="<%= project.link %>" target="_blank">View GitHub</a>
                 </div>
             <% } else { %>
-                <div>
-                    <h4><%= project.title %></h4>
+                <div class="card">
                     <img src="<%= project.image %>" alt="<%= project.title %>">
+                    <h4><%= project.title %></h4>
                     <a href="/<%= project.category %>/<%= project.id %>">View Details</a>
                 </div>
             <% } %>

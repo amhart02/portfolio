@@ -70,7 +70,7 @@ const websites = [
         image: "/images/websites/spaceWars.png"
     },
     {
-        id: 7,
+        id: 8,
         category: "websites",
         title: "Car Dealership",
         description: "My previously learned front-end principles with newly found back-end skills were combined to create this project. It is a mock car dealership website that allows users to browse available cars, contact management, write reviews, and send in repair requests. Employees and managers can also log in to manage requests, reviews, messages from users, and cars.",

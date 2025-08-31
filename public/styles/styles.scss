@@ -2,16 +2,21 @@ $font: "Quicksand", sans-serif;
 $bold: 600;
 $regular: 500;
 $black: hsl(0, 0%, 0%);
+$dark-pink: hwb(0 17% 12%);
 $pink: hwb(0 57% 2%);
 $light-pink: hwb(0 69% 4%);
-$light-gray: hsl(0, 0%, 83%);
-$white: hsl(0, 5%, 90%);
+$dark-gray: hsl(0, 0%, 25%);
+$dark-medium-gray: hsl(0, 0%, 45%);
+$medium-gray: hsl(0, 0%, 80%);
+$light-gray: hsl(0, 0%, 95%);
+$white: hsl(0, 0%, 100%);
 
 body {
     margin: 0;
     padding: 0;
     font-family: $font;
     font-weight: $regular;
+    background-color: $light-gray;
 }
 
 a {
@@ -102,19 +107,23 @@ header {
     background-color: $pink;
     background: linear-gradient(to bottom, $pink 0%, $white 50rem);
     h1 {
-        margin: 0;
-        font-size: 1.5rem;
-    }
-    h2 {
         font-family: $font;
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin: 0;
         font-weight: $bold;
+    }
+    h2 {
+        margin: 0;
+        a {
+            font-size: 1rem;
+            color: $dark-gray;
+        }
     }
     h3 {
         text-align: left;
         font-size: 1.25rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
+        color: $dark-gray;
     }
     a {
         color: $black;
@@ -166,7 +175,7 @@ nav.open {
         position: relative;
         padding: 6rem 2.5rem 5rem 2.5rem;
         font-size: 1.25rem;
-        background-color: $light-gray;
+        background-color: $medium-gray;
     }
     a:nth-of-type(1) {
         margin-top: -3rem;
@@ -208,58 +217,61 @@ nav.open {
         }
         li:nth-of-type(3) {
             a {
-                background-color: $light-gray;
+                background-color: $medium-gray;
             }
         }
     }
 }
 
-.projects {
+.projects, .project {
     margin: 2rem 0;
-    div {
+    .card {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 1.5rem;
         margin: 5rem 3rem;
+        background-color: $white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
     }
-    div:nth-of-type(even) a {
-        align-self: flex-start;
-    }
-    div:nth-of-type(even) h4 {
-        align-self: flex-end;
-    }
-    .programming {
-        background-color: $light-gray;
+    .software, .date {
+            color: $dark-medium-gray;
+            margin: 0;
     }
     h4 {
-        background-color: $pink;
-        margin: -1.5rem -3rem;
-        z-index: 6;
-        padding: 0.75rem;
-        border-radius: 8px;
-        font-size: 1rem;
-        align-self: flex-start;
-        background: linear-gradient(to right, $pink 0%, $light-pink 10rem);
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0 0;
     }
     img {
         width: 100%;
         height: auto;
-        background-color: $light-gray;
-        border-radius: 8px;
-        padding: 4rem 1.5rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem;
+        border-bottom: solid 2px $medium-gray;
+        align-self: center;
     }
     a {
-        background-color: $light-pink;
-        color: $black;
-        z-index: 6;
-        padding: 0.75rem;
-        border-radius: 8px;
-        font-size: 1rem;
-        margin: -1.5rem -3rem;
-        align-self: flex-end;
-        background: linear-gradient(to left, $pink 0%, $light-pink 6rem);
+        color: $dark-pink;
+        font-weight: $bold;
+        font-size: 1.15rem;
+        margin: 1rem 0;
+    }
+}
+
+.project {
+    img {
+        border-bottom: none;
+    }
+    .backTitle {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        a {
+            margin-right: 1rem;
+        }
+    }
+    h4 {
+        margin: 1rem;
     }
 }
 
