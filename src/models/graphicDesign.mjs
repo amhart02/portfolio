@@ -20,7 +20,7 @@ const graphicDesign = [
     {
         id: 3,
         category: "graphicDesign",
-        title: "Brigham Young University - Idaho Campus Map",
+        title: "Campus Map",
         description: "A campus map for BYU-Idaho created using Adobe InDesign, Illustrator, and Photoshop. The map features detailed guides, photographs of students, and descriptions of key buildings on campus. Overall layout and usability was kept in mind during the development process.",
         software:["Adobe Indesign", "Adobe Photoshop"],
         date: "June 2024",
@@ -48,7 +48,7 @@ const graphicDesign = [
     {
         id: 6,
         category: "graphicDesign",
-        title: "Piet Mondrian Art Gallery Pamphlet",
+        title: "Art Gallery Pamphlet",
         description: "A mock art gallery booklet for a fictional exhibit featuring the works of Piet Mondrian. This project, designed in Adobe InDesign, Illustrator, and Photoshop, required the inclusion of eight pieces from Mondrian's collection and a description of the artist.",
         software:["Adobe InDesign"],
         date: "July 2024",

@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Afacad Flux", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
 }
 
 a {
@@ -17,7 +18,6 @@ a {
   color: hsl(0, 0%, 0%);
   background-color: hsl(0, 5%, 90%);
   transition: hsl(0, 5%, 90%) 0.3s ease;
-  font-weight: 200;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 10px;
@@ -94,17 +94,17 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 header h2 {
-  font-family: "memimas-pro", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 3.5rem;
   margin: 0;
+  font-weight: 600;
 }
 header h3 {
   text-align: left;
   font-size: 1.25rem;
-  font-weight: 400;
   margin-top: 2rem;
 }
 header a {
@@ -186,6 +186,7 @@ nav.open {
   font-size: 1.25rem;
   color: hsl(0, 0%, 0%);
   border-radius: 100%;
+  font-weight: 600;
 }
 .index_page ul li:nth-of-type(1) a {
   background-color: hsl(0, 91.1111111111%, 77.5%);
@@ -195,6 +196,55 @@ nav.open {
 }
 .index_page ul li:nth-of-type(3) a {
   background-color: hsl(0, 0%, 83%);
+}
+
+.projects {
+  margin: 2rem 0;
+}
+.projects div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 5rem 3rem;
+}
+.projects div:nth-of-type(even) a {
+  align-self: flex-start;
+}
+.projects div:nth-of-type(even) h4 {
+  align-self: flex-end;
+}
+.projects .programming {
+  background-color: hsl(0, 0%, 83%);
+}
+.projects h4 {
+  background-color: hsl(0, 91.1111111111%, 77.5%);
+  margin: -1.5rem -3rem;
+  z-index: 6;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  align-self: flex-start;
+  background: linear-gradient(to right, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 77.1428571429%, 82.5%) 10rem);
+}
+.projects img {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0, 0%, 83%);
+  border-radius: 8px;
+  padding: 4rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.projects a {
+  background-color: hsl(0, 77.1428571429%, 82.5%);
+  color: hsl(0, 0%, 0%);
+  z-index: 6;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: -1.5rem -3rem;
+  align-self: flex-end;
+  background: linear-gradient(to left, hsl(0, 91.1111111111%, 77.5%) 0%, hsl(0, 77.1428571429%, 82.5%) 6rem);
 }
 
 footer {
