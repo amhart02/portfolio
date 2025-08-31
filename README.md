@@ -2,7 +2,7 @@
 
 This website showcases my background in graphic design, web development, and programming. I’m passionate about continually learning new skills, techniques, and ideas as a developer. I’d love to hear your thoughts and suggestions for improvement!
 
-### <a href="https://portfolio-svkb.onrender.com/" >Click Here</a> to view the website!
+### <a href="https://portfolio-svkb.onrender.com/" target="_blank">Click Here</a> to view the website!
 
 ### This project was created using:
 <p>
