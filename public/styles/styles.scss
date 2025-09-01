@@ -151,7 +151,7 @@ nav.open {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 2rem;
+        margin: 4rem 2rem;
         div {
             display: flex;
             flex-direction: column;
@@ -182,7 +182,7 @@ nav.open {
         }
     }
     ul {
-        margin: 4rem 0 0 0;
+        margin: 4rem;
         padding: 0;
         list-style-type: none;
         display: flex;
@@ -313,6 +313,7 @@ footer {
             gap: 4rem;
             p {
                 text-align: left;
+                max-width: 400px;
             }
         }
     }
@@ -350,123 +351,47 @@ footer {
     }
 }
 
-// Tablet and mobile optimizations
-@media (max-width: 768px) {
-    header {
-        padding: 5rem 1rem 3rem 1rem;
-        h2 {
-            font-size: 2.8rem;
-        }
-        h3 {
-            font-size: 1.1rem;
-        }
-    }
-
+//computer
+@media (min-width: 900px) {
     .projects {
-        margin: 1rem 0;
-        div {
-            margin: 2rem 1rem;
-            padding: 1.2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        .card {
+            margin: 1rem;
         }
         h4 {
-            margin: -1.2rem -1.2rem 1rem -1.2rem;
-            padding: 0.8rem;
             font-size: 1rem;
-            text-align: center;
-        }
-        img {
-            padding: 2rem 1rem;
-            margin: 1rem 0;
         }
         a {
-            margin: 1rem -1.2rem -1.2rem -1.2rem;
-            padding: 0.8rem;
-            font-size: 1rem;
-            text-align: center;
-            align-self: stretch !important;
-        }
-        div:nth-of-type(even) a {
-            align-self: stretch !important;
-        }
-        div:nth-of-type(even) h4 {
-            align-self: stretch;
-            text-align: center;
-        }
-        .programming {
-            p {
-                margin: 0.5rem 0;
-                font-size: 1rem;
-                line-height: 1.5;
-            }
+            font-size: 0.75rem;
         }
     }
-
     nav {
-        font-size: 1.8rem;
-        li {
-            padding: 1.8rem 2.5rem;
+        width: 30%;
+    }
+    .project {
+        .card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 5rem;
+        }
+        section:nth-of-type(1) {
+            grid-column: 1/2;
+        }
+        section:nth-of-type(2) {
+            grid-column: 2/3;
         }
     }
 }
 
-// Small mobile devices
-@media (max-width: 480px) {
-    header {
-        padding: 4rem 0.8rem 2.5rem 0.8rem;
-        h1 {
-            font-size: 1.3rem;
-        }
-        h2 {
-            font-size: 2.5rem;
-        }
-        h3 {
-            font-size: 1rem;
-            margin-top: 1.5rem;
-        }
-    }
-
+//large computer
+@media (min-width: 1200px) {
     .projects {
-        div {
-            margin: 2rem 0.5rem;
-            padding: 0.8rem;
-        }
-        h4 {
-            margin: -0.8rem -0.8rem 1rem -0.8rem;
-            font-size: 0.95rem;
-            padding: 0.7rem;
-        }
-        a {
-            margin: 1rem -0.8rem -0.8rem -0.8rem;
-            font-size: 0.9rem;
-            padding: 0.7rem;
-        }
-        .programming {
-            p {
-                font-size: 0.9rem;
-            }
-        }
+        grid-template-columns: repeat(4, 1fr);
     }
-
-    nav {
-        font-size: 1.5rem;
-        li {
-            padding: 1.3rem 2rem;
-        }
-    }
-
-    .menu-icon {
-        width: 35px;
-        height: 55px;
-        span,
-        span::before,
-        span::after {
-            height: 5px;
-        }
-        span::before {
-            top: -10px;
-        }
-        span::after {
-            top: 10px;
+    .index_page {
+        .intro {
+            margin: 2rem 10rem;
         }
     }
 }

@@ -138,7 +138,7 @@ nav.open {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem;
+  margin: 4rem 2rem;
 }
 .index_page .intro div {
   display: flex;
@@ -169,7 +169,7 @@ nav.open {
   background-color: hsl(0, 0%, 80%);
 }
 .index_page ul {
-  margin: 4rem 0 0 0;
+  margin: 4rem;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -288,6 +288,7 @@ footer div {
   }
   .index_page .intro p {
     text-align: left;
+    max-width: 400px;
   }
   nav {
     width: 40%;
@@ -335,9 +336,6 @@ footer div {
   .projects a {
     font-size: 0.75rem;
   }
-  .index_page .intro {
-    margin: 2rem 7rem;
-  }
   nav {
     width: 30%;
   }
@@ -347,10 +345,10 @@ footer div {
     align-items: center;
     gap: 5rem;
   }
-  .project .card section:nth-of-type(1) {
+  .project section:nth-of-type(1) {
     grid-column: 1/2;
   }
-  .project .card section:nth-of-type(2) {
+  .project section:nth-of-type(2) {
     grid-column: 2/3;
   }
 }
