@@ -1,22 +1,26 @@
 <%- include('partials/header') %>
     <main class="project">
         <div class="card">
-            <div class="backTitle">
-                <a href="/<%= project.category %>">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
-                    </svg>
-                </a>
-                <h4><%= project.title %></h4>
-            </div>
-        <img src="<%= project.image %>" alt="<%= project.title %>">
-        <p><%= project.description %></p>
-        <p class="software">Software Used: <%= project.software.join(", ") %></p>
-        <p class="date"><%= project.date %></p>
-        <% if (project.category === "graphicDesign" && project.link) { %>
-            <a href="<%= project.link %>" target="_blank">View PDF</a>
-        <% } else if (project.category === "websites" && project.link) { %>
-            <a href="<%= project.link %>" target="_blank">View Website</a>
-        <% } %>
+            <section>
+                <div class="backTitle">
+                    <a href="/<%= project.category %>">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/>
+                        </svg>
+                    </a>
+                    <h4><%= project.title %></h4>
+                </div>
+                <img src="<%= project.image %>" alt="<%= project.title %>">
+            </section>
+            <section>
+                <p><%= project.description %></p>
+                <p class="software">Software Used: <%= project.software.join(", ") %></p>
+                <p class="date"><%= project.date %></p>
+                <% if (project.category === "graphicDesign" && project.link) { %>
+                    <a href="<%= project.link %>" target="_blank">View PDF</a>
+                <% } else if (project.category === "websites" && project.link) { %>
+                    <a href="<%= project.link %>" target="_blank">View Website</a>
+                <% } %>
+            </section>
         </div>
     </main>
 <%- include('partials/footer') %>
