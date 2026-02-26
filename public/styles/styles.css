@@ -455,13 +455,20 @@ footer div {
   }
 }
 @media (min-width: 900px) {
+  .index_page .current-project {
+    padding: 3rem;
+  }
   .index_page .project-card {
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
   }
   .index_page .project-card img {
-    max-width: 400px;
+    max-width: 350px;
     flex-shrink: 0;
+  }
+  .index_page .project-info {
+    flex: 1;
+    min-width: 0;
   }
   .projects {
     grid-template-columns: 1fr 1fr 1fr;

@@ -487,13 +487,20 @@ footer {
 //computer
 @media (min-width: 900px) {
     .index_page {
+        .current-project {
+            padding: 3rem;
+        }
         .project-card {
             flex-direction: row;
-            gap: 2.5rem;
+            gap: 2rem;
             img {
-                max-width: 400px;
+                max-width: 350px;
                 flex-shrink: 0;
             }
+        }
+        .project-info {
+            flex: 1;
+            min-width: 0;
         }
     }
     .projects {
