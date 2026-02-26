@@ -168,6 +168,87 @@ nav.open {
   border-radius: 30px;
   background-color: hsl(0, 0%, 80%);
 }
+.index_page .current-project {
+  margin: 3rem 1rem;
+  padding: 2rem 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.index_page .current-project h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+  color: hsl(0, 0%, 0%);
+}
+.index_page .project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.index_page .project-card img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+.index_page .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.index_page .project-info h3 {
+  font-size: 1.75rem;
+  margin: 0;
+  color: hsl(0, 0%, 12%);
+}
+.index_page .project-info p {
+  margin: 0;
+  line-height: 1.6;
+  color: hsl(0, 0%, 25%);
+}
+.index_page .project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.index_page .project-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+  width: fit-content;
+  min-width: 150px;
+}
+.index_page .project-button:hover {
+  background-color: hsl(0, 91.1111111111%, 77.5%);
+}
+.index_page .project-button.outline {
+  background-color: transparent;
+  color: hsl(0, 0%, 0%);
+  border: 2px solid hsl(0, 0%, 0%);
+}
+.index_page .project-button.outline:hover {
+  background-color: hsl(0, 91.1111111111%, 77.5%);
+  color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 91.1111111111%, 77.5%);
+}
+.index_page .other-projects-heading {
+  text-align: center;
+  font-size: 1.75rem;
+  margin: 3rem 1rem 1rem 1rem;
+  color: hsl(0, 0%, 25%);
+}
 .index_page ul {
   margin: 4rem;
   padding: 0;
@@ -215,21 +296,9 @@ nav.open {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-.projects .card {
-  padding: 1rem;
-  margin: 1.5rem 1rem;
-}
-.project .card {
-  padding: 1rem;
-  margin: 2rem 1rem;
-}
 .projects .software, .projects .date, .project .software, .project .date {
   color: hsl(0, 0%, 45%);
   margin: 0;
-}
-.projects .date, .project .date {
-  color: hsl(0, 0%, 30%);
-  font-weight: 600;
 }
 .projects h4, .project h4 {
   font-size: 1.5rem;
@@ -241,24 +310,41 @@ nav.open {
   padding: 2rem 1.5rem;
   border-bottom: solid 2px hsl(0, 0%, 80%);
   align-self: center;
-}
-.projects img {
-  padding: 1rem 0;
-  max-width: 100%;
-}
-.project img {
-  padding: 1rem 0;
-  max-width: 100%;
+  object-fit: contain;
 }
 .projects a, .project a {
-  color: hsl(0, 74.7368421053%, 52.5%);
+  color: hsl(0, 62.5%, 60%);
   font-weight: 600;
   font-size: 1.15rem;
   margin: 1rem 0;
 }
 
+.projects .card {
+  padding: 1rem;
+  margin: 1.5rem 1rem;
+}
+.projects img {
+  padding: 1rem 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+.projects .date {
+  color: hsl(0, 0%, 30%);
+  font-weight: 600;
+}
+
+.project .card {
+  padding: 1rem;
+  margin: 2rem 1rem;
+}
 .project section {
   width: 100%;
+}
+.project img {
+  padding: 1rem 0;
+  max-width: 100%;
+  border-bottom: none;
+  object-fit: contain;
 }
 .project .backTitle {
   display: flex;
@@ -310,6 +396,27 @@ footer div {
     text-align: left;
     max-width: 400px;
   }
+  .index_page .current-project {
+    margin: 3rem 2rem;
+    padding: 2.5rem 2rem;
+  }
+  .index_page .project-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .index_page .project-card img {
+    max-width: 100%;
+  }
+  .index_page .project-links {
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .index_page .project-button {
+    flex: 0 1 auto;
+    max-width: 200px;
+  }
   nav {
     width: 40%;
     font-size: 1.5rem;
@@ -348,6 +455,14 @@ footer div {
   }
 }
 @media (min-width: 900px) {
+  .index_page .project-card {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .index_page .project-card img {
+    max-width: 400px;
+    flex-shrink: 0;
+  }
   .projects {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -389,6 +504,14 @@ footer div {
   }
   .index_page .intro {
     margin: 2rem 10rem;
+  }
+  .index_page .current-project {
+    margin: 4rem 6rem;
+    padding: 4rem;
+    max-width: 1400px;
+  }
+  .index_page .project-card img {
+    max-width: 500px;
   }
   .project .card {
     gap: 4rem;

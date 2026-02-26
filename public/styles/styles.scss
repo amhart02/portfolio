@@ -2,7 +2,7 @@ $font: "Quicksand", sans-serif;
 $bold: 600;
 $regular: 500;
 $black: hsl(0, 0%, 0%);
-$dark-pink: hwb(0 17% 12%);
+$dark-pink: hwb(0 35% 15%);
 $pink: hwb(0 57% 2%);
 $light-pink: hwb(0 69% 4%);
 $dark-gray: hsl(0, 0%, 25%);
@@ -181,6 +181,87 @@ nav.open {
             background-color: $medium-gray;
         }
     }
+    .current-project {
+        margin: 3rem 1rem;
+        padding: 2rem 1rem;
+        background-color: $white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        h2 {
+            font-size: 2rem;
+            margin: 0 0 2rem 0;
+            color: $black;
+        }
+    }
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            object-fit: contain;
+        }
+    }
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        h3 {
+            font-size: 1.75rem;
+            margin: 0;
+            color: hsl(0, 0%, 12%);
+        }
+        p {
+            margin: 0;
+            line-height: 1.6;
+            color: $dark-gray;
+        }
+    }
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        align-items: center;
+    }
+    .project-button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: $black;
+        color: $white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: $bold;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+        width: fit-content;
+        min-width: 150px;
+        &:hover {
+            background-color: $pink;
+        }
+        &.outline {
+            background-color: transparent;
+            color: $black;
+            border: 2px solid $black;
+            &:hover {
+                background-color: $pink;
+                color: $white;
+                border-color: $pink;
+            }
+        }
+    }
+    .other-projects-heading {
+        text-align: center;
+        font-size: 1.75rem;
+        margin: 3rem 1rem 1rem 1rem;
+        color: $dark-gray;
+    }
     ul {
         margin: 4rem;
         padding: 0;
@@ -248,6 +329,7 @@ nav.open {
         padding: 2rem 1.5rem;
         border-bottom: solid 2px $medium-gray;
         align-self: center;
+        object-fit: contain;
     }
     a {
         color: $dark-pink;
@@ -257,9 +339,35 @@ nav.open {
     }
 }
 
-.project {
+.projects {
+    .card {
+        padding: 1rem;
+        margin: 1.5rem 1rem;
+    }
     img {
+        padding: 1rem 0;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    .date {
+        color: hsl(0, 0%, 30%);
+        font-weight: $bold;
+    }
+}
+
+.project {
+    .card {
+        padding: 1rem;
+        margin: 2rem 1rem;
+    }
+    section {
+        width: 100%;
+    }
+    img {
+        padding: 1rem 0;
+        max-width: 100%;
         border-bottom: none;
+        object-fit: contain;
     }
     .backTitle {
         display: flex;
@@ -316,6 +424,27 @@ footer {
                 max-width: 400px;
             }
         }
+        .current-project {
+            margin: 3rem 2rem;
+            padding: 2.5rem 2rem;
+        }
+        .project-card {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            img {
+                max-width: 100%;
+            }
+        }
+        .project-links {
+            flex-direction: row;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .project-button {
+            flex: 0 1 auto;
+            max-width: 200px;
+        }
     }
     nav {
         width: 40%;
@@ -337,7 +466,11 @@ footer {
         }
     }
     .project {
-        margin: 5rem;
+        margin: 3rem;
+        .card {
+            padding: 2rem;
+            margin: 2rem;
+        }
     }
     footer {
         display: flex;
@@ -353,6 +486,16 @@ footer {
 
 //computer
 @media (min-width: 900px) {
+    .index_page {
+        .project-card {
+            flex-direction: row;
+            gap: 2.5rem;
+            img {
+                max-width: 400px;
+                flex-shrink: 0;
+            }
+        }
+    }
     .projects {
         grid-template-columns: 1fr 1fr 1fr;
         .card {
@@ -373,13 +516,20 @@ footer {
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
-            gap: 5rem;
+            gap: 3rem;
+            padding: 3rem;
+            max-width: 1200px;
+            margin: 3rem auto;
         }
         section:nth-of-type(1) {
             grid-column: 1/2;
         }
         section:nth-of-type(2) {
             grid-column: 2/3;
+        }
+        img {
+            padding: 0;
+            border-bottom: none;
         }
     }
 }
@@ -392,6 +542,22 @@ footer {
     .index_page {
         .intro {
             margin: 2rem 10rem;
+        }
+        .current-project {
+            margin: 4rem 6rem;
+            padding: 4rem;
+            max-width: 1400px;
+        }
+        .project-card {
+            img {
+                max-width: 500px;
+            }
+        }
+    }
+    .project {
+        .card {
+            gap: 4rem;
+            padding: 4rem;
         }
     }
 }

@@ -7,6 +7,23 @@
                 <a class="a-button" href="images/alaynahartresume.pdf" target="_blank">My Resume</a>
             </div>
         </div>
+        
+        <section class="current-project">
+            <h2>Current Project</h2>
+            <div class="project-card">
+                <img src="<%= perfectDateWebsite.image %>" alt="<%= perfectDateWebsite.title %>">
+                <div class="project-info">
+                    <h3><%= perfectDateWebsite.title %></h3>
+                    <p><%= perfectDateWebsite.description %></p>
+                    <div class="project-links">
+                        <a href="<%= perfectDateWebsite.link %>" target="_blank" class="project-button">View Website</a>
+                        <a href="<%= perfectDateFigma.link %>" target="_blank" class="project-button outline">View Figma File</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="other-projects-heading">View My Other Projects</h2>
         <ul>
             <li><a href="/graphicDesign">Graphic Design</a></li>
             <li><a href="/programming">Programming</a></li>
