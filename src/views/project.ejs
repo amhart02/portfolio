@@ -15,10 +15,8 @@
                 <p><%= project.description %></p>
                 <p class="software">Software Used: <%= project.software.join(", ") %></p>
                 <p class="date"><%= project.date %></p>
-                <% if (project.category === "graphicDesign" && project.link) { %>
-                    <a href="<%= project.link %>" target="_blank">View PDF</a>
-                <% } else if (project.category === "websites" && project.link) { %>
-                    <a href="<%= project.link %>" target="_blank">View Website</a>
+                <% if (project.link) { %>
+                    <a href="<%= project.link %>" target="_blank"><%= project.linkText || (project.category === "graphicDesign" ? "View PDF" : "View Website") %></a>
                 <% } %>
             </section>
         </div>
